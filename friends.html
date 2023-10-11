@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="friends_style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <title>Friends</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="header__left">
+            <img src="images/Facebook_Logo.png" alt="">
+            <div class="header__input">
+                <span class="material-icons"> search</span>
+                <input type="text" placeholder="Search Facebook">
+
+            </div>
+        </div>
+        <div class="header__middle">
+            <div class="header__option">
+                <a href="home.html"><span class="material-icons">home</span></a>
+                <p>Home</p>
+            </div>
+            <div class="header__option active">
+                <a href="friends.html"><span class="material-icons">people_alt</span></a>
+                <p>Friends</p>
+            </div>
+            <div class="header__option">
+                <a href="watch.html"><span class="material-icons">ondemand_video</span></a>
+                <p>Watch</p>
+            </div>
+            <div class="header__option">
+                <a href="marketplace.html"><span class="material-icons">storefront</span></a>
+                <p>MarketPlace</p>
+            </div>
+            <div class="header__option">
+                <a href="group.html"><span class="material-icons">groups</span></a>
+                <p>Groups</p>
+            </div>
+        </div>
+        <div class="header__right">
+            <div class="header__right__option">
+                <span class="material-icons">apps</span>
+                <p>Menu</p>
+            </div>
+            <div class="header__right__option">
+                <i class="fa-brands fa-facebook-messenger"></i>
+                <p>Messanger</p>
+                <h6>10+</h6>
+
+            </div>
+            <div class="header__right__option">
+                <span class="material-icons">notifications</span>
+                <p>Notifications</p>
+                <h6>7+</h6>
+            </div>
+            <div class="header__right__account">
+                <img class="img__avatar" src="images/user-icon.png" alt="">
+                <p>Account</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="main">
+
+        <div class="sidebar">
+            <div class="sideheadline">
+                <h2>Friends</h2>
+                <i class="fa-solid fa-gear"></i>
+            </div>
+            <div class="friends">
+                <div class="friendsoptions active">
+                    <div class="fr active">
+                        <span class="material-icons">people_alt</span>
+                        <h3>Home</h3>
+                    </div>
+                </div>
+                <div class="friendsoptions">
+                    <div class="fr">
+                        <span class="material-icons">group_remove</span>
+                        <h3>Friend requests</h3>
+                    </div>
+                    <div class="arrow">
+                        <span class="material-icons" id="keyboard_arrow_right">keyboard_arrow_right</span>
+                    </div>
+                </div>
+                <div class="friendsoptions">
+                    <div class="fr">
+                        <span class="material-symbols-outlined">person_add</span>
+                        <h3>Suggestions</h3>
+                    </div>
+                    <div class="arrow">
+                        <span class="material-icons" id="keyboard_arrow_right">keyboard_arrow_right</span>
+                    </div>
+                </div>
+                <div class="friendsoptions">
+                    <div class="fr">
+                        <span class="material-symbols-outlined">group</span>
+                        <h3>All friends </h3>
+                    </div>
+                    <div class="arrow">
+                        <span class="material-icons" id="keyboard_arrow_right">keyboard_arrow_right</span>
+                    </div>
+                </div>
+                <div class="friendsoptions">
+                    <div class="fr">
+                        <i class="fa-solid fa-gift"></i>
+                        <h3>Birthdays</h3>
+                    </div>
+                </div>
+                <div class="friendsoptions">
+                    <div class="fr">
+                        <span class="material-icons">groups</span>
+                        <h3>Custom lists</h3>
+                    </div>
+                    <div class="arrow">
+                        <span class="material-icons" id="keyboard_arrow_right">keyboard_arrow_right</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- sidebar ends -->
+        <div class="rightsidebar">
+            <div class="righthead">
+                <h2>Friend Requests</h2>
+                <h3>See all</h3>
+            </div>
+            <div class="maincard">
+                <div class="card">
+                    <div class="cardimg">
+                        <img class="cimg" src="images/sts-1.png" alt="">
+                    </div>
+                    <div class="cardbody">
+                        <div class="name">
+                            <h2>Vijay</h2>
+                        </div>
+                        <div class="cardbottom">
+                            <button type="button" class="confirm">Confirm</button>
+                            <button type="button" class="delete">Delete</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="cardimg">
+                        <img src="images/sts-1.png" alt="">
+                    </div>
+                    <div class="cardbody">
+                        <div class="name">
+                            <h2>Ram</h2>
+                        </div>
+                        <div class="cardbottom">
+                            <button type="button" class="confirm">Confirm</button>
+                            <button type="button" class="delete">Delete</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="cardimg">
+                        <img src="images/sts-1.png" alt="">
+                    </div>
+                    <div class="cardbody">
+                        <div class="name">
+                            <h2>Siva</h2>
+                        </div>
+                        <div class="cardbottom">
+                            <button type="button" class="confirm">Confirm</button>
+                            <button type="button" class="delete">Delete</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="cardimg">
+                        <img src="images/sts-1.png" alt="">
+                    </div>
+                    <div class="cardbody">
+                        <div class="name">
+                            <h2>Suriya</h2>
+                        </div>
+                        <div class="cardbottom">
+                            <button type="button" class="confirm">Confirm</button>
+                            <button type="button" class="delete">Delete</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="cardimg">
+                        <img src="images/sts-1.png" alt="">
+                    </div>
+                    <div class="cardbody">
+                        <div class="name">
+                            <h2>Manoj</h2>
+                        </div>
+                        <div class="cardbottom">
+                            <button type="button" class="confirm">Confirm</button>
+                            <button type="button" class="delete">Delete</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="cardimg">
+                        <img src="images/sts-1.png" alt="">
+                    </div>
+                    <div class="cardbody">
+                        <div class="name">
+                            <h2>Ani</h2>
+                        </div>
+                        <div class="cardbottom">
+                            <button type="button" class="confirm">Confirm</button>
+                            <button type="button" class="delete">Delete</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="cardimg">
+                        <img src="images/sts-1.png" alt="">
+                    </div>
+                    <div class="cardbody">
+                        <div class="name">
+                            <h2>Raagav</h2>
+                        </div>
+                        <div class="cardbottom">
+                            <button type="button" class="confirm">Confirm</button>
+                            <button type="button" class="delete">Delete</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="cardimg">
+                        <img src="images/sts-1.png" alt="">
+                    </div>
+                    <div class="cardbody">
+                        <div class="name">
+                            <h2>Ramya</h2>
+                        </div>
+                        <div class="cardbottom">
+                            <button type="button" class="confirm">Confirm</button>
+                            <button type="button" class="delete">Delete</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="cardimg">
+                        <img src="images/sts-1.png" alt="">
+                    </div>
+                    <div class="cardbody">
+                        <div class="name">
+                            <h2>Harini</h2>
+                        </div>
+                        <div class="cardbottom">
+                            <button type="button" class="confirm">Confirm</button>
+                            <button type="button" class="delete">Delete</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="cardimg">
+                        <img src="images/sts-1.png" alt="">
+                    </div>
+                    <div class="cardbody">
+                        <div class="name">
+                            <h2>Vinisri</h2>
+                        </div>
+                        <div class="cardbottom">
+                            <button type="button" class="confirm">Confirm</button>
+                            <button type="button" class="delete">Delete</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="cardimg">
+                        <img src="images/sts-1.png" alt="">
+                    </div>
+                    <div class="cardbody">
+                        <div class="name">
+                            <h2>Ramya</h2>
+                        </div>
+                        <div class="cardbottom">
+                            <button type="button" class="confirm">Confirm</button>
+                            <button type="button" class="delete">Delete</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="cardimg">
+                        <img src="images/sts-1.png" alt="">
+                    </div>
+                    <div class="cardbody">
+                        <div class="name">
+                            <h2>Ajay</h2>
+                        </div>
+                        <div class="cardbottom">
+                            <button type="button" class="confirm">Confirm</button>
+                            <button type="button" class="delete">Delete</button>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

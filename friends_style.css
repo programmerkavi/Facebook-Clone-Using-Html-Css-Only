@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins' sans-serif;
+}
+body{
+    background-color: #eff2f5;
+}
+.header__left img {
+    height: 42px;
+    margin: 0px 10px;
+}
+
+.img__avatar {
+    height: 40px;
+
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 0px;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    z-index: 100;
+
+}
+
+.header__left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 5px;
+
+}
+
+.header__input input {
+    border: none;
+    border-radius: 999px;
+    background-color: #eff2f5;
+    padding: 15px 30px;
+    outline: none;
+    text-indent: 20px;
+}
+
+.header__input {
+    position: relative;
+}
+
+.header__input span {
+    position: absolute;
+    top: 9px;
+    left: 10px;
+
+}
+
+.header__middle {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+
+.header__option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin: 0px 15px;
+    padding: 0px 6px;
+}
+
+.header__option span {
+    font-size: 35px;
+    color: gray;
+    padding: 7px 20px;
+}
+
+.header__option p {
+    position: absolute;
+    top: 70px;
+    color: white;
+    background-color: black;
+    border-radius: 7px;
+    opacity: 0;
+    padding: 5px 10px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.header__option:hover p {
+    opacity: 1;
+
+}
+
+.header__right__option p,
+.header__right__account p {
+    position: absolute;
+    top: 50px;
+    color: white;
+    font-size: small;
+    background-color: black;
+    border-radius: 4px;
+    padding: 5px 10px;
+    transition: ease;
+    opacity: 0;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.header__right__option:hover p,
+.header__right__account:hover p {
+    opacity: 1;
+}
+
+.header__option span:hover {
+    background-color: #eff2f5;
+    cursor: pointer;
+    color: #276bea;
+    border-radius: 5px;
+}
+
+.header__option.active span {
+    color: #276bea;
+    border-bottom: 3px solid #276bea;
+
+}
+
+.header__option.active span:hover {
+    border-radius: 0px;
+    background-color: black;
+}
+
+/*header right*/
+
+.header__right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.header__right .header__right__option,
+.header__right__account {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0px 10px;
+    position: relative;
+
+}
+
+
+.header__right__option h6 {
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    padding: 4px 7px;
+    border-radius: 10px;
+    background-color: red;
+    font-size: 12px;
+    font-weight: 600px;
+    color: white;
+} 
+
+.header__right__option span,
+i {
+    font-size: 27px;
+}
+
+.header__right__option {
+    padding: 6px 5px;
+    border-radius: 50%;
+    background-color: #eff2f5;
+}
+
+.header__right__option:hover {
+    background-color: #c9ced2;
+}
+
+/*----heading ends-----*/
+.main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items:start;
+}
+
+.sidebar{
+    flex: 1;
+    /* width: 350px; */
+    height: 650px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    position: sticky;
+    top: 75px;
+    left: 0px;
+}
+.sidebar .sideheadline{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:20px 10px;
+}
+.sideheadline i{
+    font-size: 23px;
+    padding: 5px 5px;
+    border-radius: 50%;
+    background-color: #eff2f5;
+}
+.sideheadline i:hover{
+    background-color: #c9ced2;
+   
+}
+.friends .friendsoptions{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    margin: 10px 10px;
+    border-radius: 10px;    
+}  
+.fr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px 10px;
+    margin: 6px 0px;
+}
+.friendsoptions .fr span,
+.friendsoptions .fr i{
+    font-size: 25px;
+    padding: 5px 5px;
+    border-radius: 50%;
+    background-color:#c9ced2;
+    margin-right: 5px;
+}
+.friendsoptions .fr h3{ 
+    font-size: 17px;
+    font-weight: 900;
+    margin-left: 5px;
+    
+}
+.friendsoptions:hover{
+    background-color:#eff2f5;
+}
+.fr.active span{
+    color: white;
+    background-color: blue;
+}
+.friendsoptions.active{
+    background-color:#eff2f5;
+}
+
+ .rightsidebar{
+    flex:3;
+    margin:30px 0px;
+    user-select: none;
+    background-color: #f1f1f5;
+}
+
+
+ .righthead{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 25px;
+
+} 
+.righthead h3{
+    font-size:18px;
+    color: #1877f2;
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+.righthead h3:hover{
+    background-color: #c9ced2;
+}
+
+.righthead h2{
+
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.maincard{
+    margin: 0px 10px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+   
+}
+
+.card{
+    width: 200px;
+    height: 330px;
+    border-radius: 5px;
+    margin: 10px 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;    /* border: 1px solid red; */
+    background-color: white;
+}
+
+
+.card .cardimg img{
+    width: 200px;
+    height: 170px;
+    border-radius: 5px;
+    border-bottom: 1px solid lightgray;
+}   
+.card .cardbody{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px; 
+    
+}
+.name{
+    margin-left: 20px;
+    font-size: 14px;
+}
+.name:hover{
+    text-decoration: underline;
+    
+}
+.cardbottom{
+    display: grid;
+    margin: 0px 10px;
+    gap: 7px;
+
+}
+.cardbottom .delete{
+    font-size: 17px;
+    font-weight: 300;
+    background-color:#c9ced2;
+    padding: 5px 5px;
+    border-radius: 7px;
+    border: none;
+
+}
+.cardbottom .confirm{
+    font-size: 17px;
+    font-weight: 300;
+    background-color:#1877f2;
+    padding: 5px 5px;
+    border-radius: 7px;
+    border: none;
+}
+.cardbottom .delete:hover{
+    background-color: gray;
+}
+.cardbottom .confirm:hover{
+    background-color: #276bea;
+}
+
+
+    
+
+
+
+
+
+
+
+
+
+
